@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        /*
+        text(): inside tag contorl
+        */
+        function getA(){
+            let str=$("#a1").text();
+            alert(str);
+        }
+        function getA2(){
+            let str=$("#a2").text();
+            alert(str);
+        }
+
+        function setA3(){
+            $("#a3").text("literal Set");
+        }
+        function setHtml(){
+            $("a3").text("<a href='http://daum.net>Daum</a>")
+
+        }
+    </script>
+</head>
+<body>
+    <div id="a1">a1 literal</div>
+    <input type="button" value="a1 literaload" onclick="getA()">
+
+    <div id="a2">
+        <a href="http://www.google.com">Google</a>
+    </div>
+    <input type="button" value="a2 literaload" onclick="getA2()">
+
+    <div id="a3"></div>
+    <input type="button" value="a2 literal load" onclick="setA3()">
+    <input type="button" value="a2 html setting" onclick="setHtml()">
+</body>
+</html>
