@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        /*
+            [attribute ~ =value]:  Selecting the tag with blank or same
+            [*= value]: attribute contain the tag
+        */
+        $(function(){
+            $("p[title ~='aa']").css("background-color","yellowgreen");
+            $("p[title *='aa']").css("color","skyblue");
+        
+        });
+
+    </script>
+</head>
+<body>
+<div>
+    <p title="aaa4"> Title is aa4 p tag</p>
+    <p title="aaa5">title is aaa5 p tag</p>
+    <p title="aa a6">title is aa a6 p tag</p>
+    <p title="aa">title is aa p tag</p>
+</body>
+</html>

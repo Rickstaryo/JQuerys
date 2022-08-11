@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        /*
+            eq():Reduce the set of matched elements to the one at the specified index.
+            Given a jQuery object that represents a set of DOM elements, the .eq() method constructs a new jQuery object from one element within that set. 
+
+            nth-child():Selects all elements that are the nth-child of their parent.
+            The :nth-of-type() CSS pseudo-class matches elements based on their position among siblings of the same type (tag name).
+        */
+        $(function(){
+            $("p:eq(3)").css("background-color","yellowgreen");
+            $("p:nth-child(1)").css("color","orange");
+            $("p:nth-of-type(1)").css("font-style","italic");
+        });
+
+    </script>
+</head>
+<body>
+<div>
+    <p>p tag</p>
+    <p>p tag</p>
+    <p>p tag</p>
+</div>
+<hr>
+<div>
+    <p>p tag</p>
+    <p>p tag</p>
+    <p>p tag</p>
+</div>
+<hr>
+    <div>
+        <div>div tag</div>
+        <p>p tag</p>
+        <p>p tag</p>
+    </div>
+</body>
+</html>

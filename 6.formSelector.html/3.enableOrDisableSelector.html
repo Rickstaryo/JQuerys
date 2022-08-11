@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        /*
+            enable:
+            disable
+            selected
+            cheked: checkbox
+        */
+        $(function(){
+            $(":enabled").css("background-color","green");
+            $(":disabled").css("background-color","red");
+            let selected = $("selected").text();
+            alert(selected)
+
+        });
+
+    </script>
+</head>
+<body>
+    <input type="text">
+    <input type="password">
+    <input type="text" disabled="disabled">
+    <input type="text" disabled="disabled">
+    
+    <select>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    </select>
+</body>
+</html>

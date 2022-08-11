@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        /*
+          only-child: only-child selector selects every element that is the only child of its parent.If there is another tag then it's not working 
+          only-of-type: only of typeelector selects every element that is the only child of its parent
+        */
+        $(function(){
+            $( 'p:only-child').css( 'background-color', "yellow" );
+            $( 'p:only-of-type').css( 'color', "blue" );
+        });
+    </script>
+</head>
+<body>
+<div>
+    <p>p tag</p>
+    <p>p tag</p>
+</div>
+<div>
+    <p>p tag</p>
+<div>
+    <div>div tag</div>
+    <p>p tag</p>
+</div>
+</body>
+</html>

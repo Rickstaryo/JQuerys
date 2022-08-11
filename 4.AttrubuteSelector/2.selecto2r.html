@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        /*
+            [attribute $=value]: Selects elements that have the specified 
+            attribute with a value containing a given substring.
+            [attribute |=value]: start or end containg ing the word 
+        */
+        $(function(){
+            $("p[title $='a3']").css("background-color","yellowgreen");
+            $("p[title |='aaa3']").css("color","orange");
+            $("p[title ^='aaa3']").css("font-size","30px");
+
+        });
+
+    </script>
+</head>
+<body>
+<div>
+<p title="aaa3"> P tag with no attribute</p>
+<p title="aaa3-text">title</p>
+<p title="aaa3test">title</p>
+</body>
+</html>

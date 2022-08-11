@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        /*
+        First tag selector
+        :first : first tag select
+        :first-child: selected by sections firsnt child, if not selected then there is no change
+        :first-of-type: selcotr tag each section first tag is selected
+        */
+        $(function(){
+            $("p:first").css("background-color","yellow");
+            $("p:first-child").css("background-color","orange");
+            $("p:first-of-type").css("font-size","orange");
+            
+        });
+    </script>
+</head>
+<body>
+    <P> p tag</P>
+    <hr>
+    <div>
+        <p>div inside p tag</p>
+        <p>div inside p tag</p>
+        <p>div inside p tag</p>
+    </div>
+    <hr>
+    <div>
+        <div>div inside div tag</div>
+        <p>div inside p tag</p>
+        <p>div inside p tag</p>
+    </div>
+
+
+</body>
+</html>

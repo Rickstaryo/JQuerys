@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        /*
+            gt()): Select all elements at an index greater than index within the matched set.
+        */
+        $(function(){
+            $("p:gt(0)").css("background-color","yellowgreen");
+            $("p:lt(5)").css("background-color","blue");
+        });
+
+    </script>
+</head>
+<body>
+<div>
+    <p>p tag</p>
+    <p>p tag</p>
+    <p>p tag</p>
+</div>
+<hr>
+<div>
+    <p>p tag</p>
+    <p>p tag</p>
+    <p>p tag</p>
+</div>
+<hr>
+    <div>
+        <p>p tag</p>
+        <p>p tag</p>
+        <div>div tag</div>
+    </div>
+</body>
+</html>
