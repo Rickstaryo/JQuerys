@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+    <script>
+        function getAttr(){
+            let src =$("#a1").attr("src");
+            let width =$("#a1").attr("width");
+            let height =$("#a1").attr("height");
+            let id =$("#a1").attr("id");
+            // console.log(src);
+            // console.log(width);
+            // console.log(heigth);
+            // console.log(id);
+            $("#result").html("src :" +src + "<br>"
+            + "width :" +width + "<br>"
+            + "height :" +height + "<br>"
+            + "id :" +id + "<br>"
+            );
+        }
+        function setAttr(){
+            $("#a1").attr("width",680);
+            $("#a1").attr("height",680);
+        }
+
+    </script>
+</head>
+<body>
+    <img src="4.jpeg" width="340" height="180" id="a1">
+    <div></div>
+    <input type="button" value ="attribute load" onclick="getAttr">
+    <input type="button" value ="attribute set" onclick="setAttr">
+</body>
+</html>

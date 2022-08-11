@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        /*
+        val() Function
+        */
+        function getA1(){
+            let str=$("#a1").val();
+            alert(str)
+        }
+        function setA1(){
+            str="1234";
+            $("#a1").val(str);
+        }
+    </script>
+</head>
+<body>
+ <input type="text" id="a1">
+ <br>
+ <input type="button"value="value load" onclick="getA1()" >
+ <br>
+ <input type="button"value="value set" onclick="setA1()" >
+ 
+</html>

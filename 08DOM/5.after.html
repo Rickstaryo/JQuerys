@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        /*
+       after()
+        before
+        */
+        function after1(){
+            $("#a1").after("<p>New p tag</p>")
+        }
+        function before1(){
+            $("#a1").before("<p>New p tag</p>")
+        }
+
+    </script>
+</head>
+<body>
+    <div id="a1">
+        <p>p tag</p>
+    </div>
+    <input type="button" value ="adding htmlcode behind " onclick="after1()">
+    <input type="button" value="adding html code forefront" onclick="before1()">
+</html>

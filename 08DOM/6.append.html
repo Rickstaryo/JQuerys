@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        /*
+        append
+        prepend
+        */
+        function append1(){
+            $("#a1").append("<p>New p tag</p>")
+        }
+        function prepend1(){
+            $("#a1").prepend("<p>New p tag</p>")
+        }
+
+    </script>
+</head>
+<body>
+    <div id="a1">
+        <p>p tag</p>
+    </div>
+    <input type="button" value ="adding htmlcode behind " onclick="append1()">
+    <input type="button" value="adding html code forefront" onclick="prepend1()">
+</html>
