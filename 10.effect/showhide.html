@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // hide(): hiding the tag
+        // Show(): showing the tag
+        function div_hide(){
+            $("#a1").hide();
+        }
+        function div_show(){
+            $("#a1").show();
+        }
+        function div_toggle(){
+            $("#a1").toggle();
+        }
+    </script>
+    <style>
+        #a1{
+            background-color: yellow;
+            border: 1px solid black;
+            width: 200px;
+            height: 200px;
+
+        }
+    </style>
+</head>
+<body>
+    <input type="button" value="hide" onClick="div_hide()">
+    <input type="button" value="show" onClick="div_show()">
+    <input type="button" value="toggle" onClick="div_toggle()">
+    <div id="a1"></div>
+</body>
+</html>

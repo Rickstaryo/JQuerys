@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+
+    <script>
+        // prev : select tag prev tag
+        // prevALL()
+        // NextUntil: 선택된 태그 다음태그 부터 선택자2태그까지
+        $(function(){
+            $("#a1").prev().css("background-color","red");
+            $("#a1").prevAll().css("border-style","dotted");
+            $("#a1").prevUntil("#a2").css("border-width","4px");
+            
+        });
+    </script>
+    <style>
+        div{
+            border: 2px solid black;
+            padding:10px;
+            margin: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="a2">div 1</div>
+    <div>div 2</div>
+    <div>div 3</div>
+    <div id="a1">div 4</div>
+    <div >div 5</div>
+</body>
+</html>

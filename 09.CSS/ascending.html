@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        div{
+            border: 2px solid black;
+            padding:10px;
+            margin: 10px;
+        }
+        </style>
+<script>
+    $(function(){
+        $("#a4").parent().css("border-color", "red");
+        $("#a4").parents().css("border-color", "green");
+        $("#a4").parentsUntil(".c1").css("border-style", "dotted");
+        
+    });
+   //Get the parent of each element in the current set of matched elements, optionally filtered by a selector.
+</script>
+</head>
+<body>
+    <div> Div tag1
+        <div class="c1">Div tag2
+            <div class="c2">Div tag3
+                <div id="a4">
+                    Div tag4
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

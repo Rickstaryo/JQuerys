@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+    <Script>
+        function getClass(){
+            $("#a1").addClass("active");
+        }
+        function removeClass(){
+            $("#a1").removeClass("active");
+        }
+        function toggleClass(){ 
+            $("#a1").toggleClass("active");
+        }
+        
+        
+        </Script>
+<style>
+    .active{
+        background-color: black;
+        color:white;
+    }
+</style>
+
+</head>
+<body>
+    <h1 id="a1">h1 Tag</h1>
+    <input type="button" value="CSS add"onclick="getClass()">
+    <input type="button" value="Class remove" onclick="removeClass()">
+    <input type="button" value="Class toggle" onclick="toggleClass()">
+
+</body>
+</html>

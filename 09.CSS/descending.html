@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        div{
+            border: 2px solid black;
+            padding:10px;
+            margin: 10px;
+        }
+        </style>
+<script>
+    $(function(){
+        $("#a1").children().css("border-color", "red");
+        $("#a1").children(".c1").css("border-width", "4px");
+        $("#a1").children(".c3").css("border-style", "dotted");
+        
+
+    });
+   // Children 
+   // Children selector
+   // find(selector)
+</script>
+</head>
+<body>
+    <div id="a1"> 
+        div
+        <div class="c1">Div 1
+            <div class="c3">Div 1-2
+            </div>
+        </div>
+        <div class="c2">
+            div2
+            <div>div2-2</div>
+        </div>
+    </div>
+</body>
+</html>

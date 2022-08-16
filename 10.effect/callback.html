@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // Callback :A callback is a function passed as an argument to another function. 
+        function callBack(){
+            $("#a1").hide("slow", function(){
+                alert("Effect End");
+            });
+
+        };
+        </script>
+    <style>
+        #a1{
+            background-color: yellow;
+            border: 1px solid black;
+            width: 200px;
+            height: 200px;
+
+        }
+    </style>
+</head>
+<body>
+<input id="a1" type="button" value="Callback" onclick="callBack()">
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+    <Script>
+        function getCSS(){
+            let v1=$("#a1").css("background-color")
+            let v2=$("#a1").css("color")
+            console.log(v1);
+            console.log(v2);
+            $("#result").append("background-color: " + v1 +"<br>");
+            $("#result").append("color: " + v2 +"<br>");
+        }
+        function setCSS(){
+            $("#a1").css("background-color","red");
+            $("#a1").css("color","yellow");
+        }
+        
+        
+        </Script>
+<style>
+    #a1{
+        background-color: black;
+        color:white;
+    }
+</style>
+
+</head>
+<body>
+    <h1 id="a1">h1 Tag</h1>
+    <input type="button" value="CSS get"onclick="getCSS()">
+    <input type="button" value="CSS set" onclick="setCSS()">
+    <div id="result"></div>
+</body>
+</html>
