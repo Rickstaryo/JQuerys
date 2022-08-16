@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<script>
+    function getText(){
+        $.ajax({
+            url: "data.txt", 
+            type: "get",
+            dataType: "text",
+            success: function(rec_data){
+                $("#result").text(rec_data);
+            }
+        });
+    }
+</script>
+<body>
+    <input type="button" value="literal Data" onclick="getText()">
+    <div id="result"></div>
+</body>
+</html>

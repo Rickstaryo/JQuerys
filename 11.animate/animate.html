@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+/*
+    animate()L selected Css attribute to animation
+*/
+function setSize(){
+    $("#a1").animate({
+        width:400,
+        height:400,
+    },"slow");
+}
+function setOpacity(){
+    $("#a1").animate({
+        opacity: 0.1
+    },"slow");
+}
+function setPosition(){
+    $("#a1").animate({
+        left: '100', top: '100'
+    },"slow");
+
+}
+</script>
+    <style>
+        #a1{
+            background-color: yellow;
+            border: 1px solid black;
+            width: 200px;
+            height: 200px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <input type="button" value="Size" onclick="setSize()">
+    <input type="button" value="Opacity" onclick="setOpacity()">
+    <input type="button" value="position" onclick="setPosition()">
+    <div id="a1"></div>
+</body>
+</html>
