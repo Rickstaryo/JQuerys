@@ -16,9 +16,59 @@
             }
         });
     }
+    function getHtml(){
+        $.ajax({
+            url:"data2.html",
+            dataType:"html",
+            success: function(rec_data){
+                $("#result").html(rec_data);
+            }
+        });
+    }
+    function getXml(){
+        $.ajax({
+            url:"data.xml",
+            dataType: "xml",
+            success: function(rec_data){
+                console.log(rec_data);
+                let data =$(rec_data).find("data");
+                // console.log(data);
+                $(data).each(function(idx,obj){
+                    // console.log(idx);
+                    // console.log(obj);
+                    let str1 =$(obj).find("str1");
+                    let str2 =$(obj).find("str2");
+                    console.log(str1);
+                    console.log(str2);
+                    $("#result").append("str1: +" + str1+ "<br>");
+                    $("#result").append("str2: +" + str2+ "<br>");
+                    
+                })
+            }
+        });
+    }
+    function getJson(){
+        $.ajax({
+            url : "data4.json",
+            success: (function(rec_data){
+                // console.log(rec_data);
+                $("#result").append("data1 :" + rec_data.data1 +"<br>");
+                $("#result").append("location :" + rec_data.location +"<br>");
+                $("#result").append("word :" + rec_data.word +"<br>");
+            })
+
+        });
+    }
+
+
+    
 </script>
 <body>
     <input type="button" value="literal Data" onclick="getText()">
+    <input type="button" value="Html Data" onclick="getHtml()">
+    <input type="button" value="Xml Data" onclick="getXml()">
+    <input type="button" value="getJson Data" onclick="getJson()">
+
     <div id="result"></div>
 </body>
 </html>

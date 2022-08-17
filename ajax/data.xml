@@ -1,0 +1,15 @@
+<?xml version ="1.0" encoding"utf-8"?>
+<root>
+    <data>
+        <str1>literal 1-1</str1>
+        <str2>literal 1-2</str2>
+    </data>
+    <data>
+        <str1>literal 2-1</str1>
+        <str2>literal 2-2</str2>
+    </data>
+    <data>
+        <str1>literal 3-1</str1>
+        <str2>literal 3-2</str2>
+    </data>
+</root>
